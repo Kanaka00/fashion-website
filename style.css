@@ -1,0 +1,299 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    text-transform: initial;
+
+}
+.navbar-brand img{
+    width:100px
+}
+#home{
+    padding-top: 7vh;
+    background-color: gray;
+}
+.home-img img{
+    width: 350px;
+    margin-left: 50px;
+    border-radius: 0% 0% 10% 24% / 10% 10% 0% 24% ;
+}
+.home-button{
+    font-size: 13px;
+    border: 1px solid black;
+    background-color: black;
+    color: wheat;
+    width: 100px;
+    height: 40px;
+
+}
+.home-content{
+    width:40%;
+    padding-top:20vh;
+}
+
+.home-button:hover{
+    background-color: white;
+    color: black;
+}
+.collection-img img{
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.collection-img{
+    width:250px ;
+    display: flex;
+    flex-direction: column;
+}
+.collection-imgs{
+    display: flex;
+}
+.collection-img-order{
+position: relative;
+width: 200PX;
+top: -30px;
+height: 30px;
+border: 1px solid black;
+}
+.best-fashion{
+    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(6,100px);
+    grid-template-rows: repeat(4,100px);
+    gap: 20px;
+    margin-top: 15vh;
+    padding-bottom: 100px;
+}
+.fathion-img{
+ grid-row: 1/5;
+ grid-column: 1/4;
+}
+.fathion-img img{
+    border-radius: 23% 10% 0% 0% / 23% 0% 10% 10%  ;
+}
+.fathion-info{
+    grid-row: 1/4;
+    grid-column: 4/7;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.fashion-sales{
+    grid-row: 4/5;
+    grid-column: 4/7;
+    background-color: rgba(16, 15, 15, 0.349);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.253);
+    position: relative;
+    left: -60;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+
+}
+.sales-info{
+    color:white
+}
+.sales-info-count{
+    color:black;
+}
+#product{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    gap: 20px;
+    justify-content: center;
+    background-color: gray;
+    align-items: center;
+
+}
+.best-seller-btn{
+    border: 1px solid black;
+    width: 150px;
+    border-radius: 5px;
+    margin-top: 20px;
+    height: 50px;
+    background-color: transparent;
+    font-size: 13px;
+}
+.best-seller-btn:hover{
+    background-color: black;
+    color: wheat;
+    transition: 0.5s;
+}
+.best-seller-product{
+    width: 30%;
+}
+.best-seller-imgs{
+    width: 50%;
+    height: 70vh;
+    overflow: scroll;
+    overflow-y: hidden;
+    border-top:1px solid rgba(0, 0, 0, 0.544) ;
+    border-left:1px solid rgba(0, 0, 0, 0.486) ;
+    border-top-left-radius: 10px;
+}
+.best-seller-imgs::-webkit-scrollbar {
+    width: 10px; 
+    background-color: transparent;
+}
+
+  
+.best-seller-img{
+    width: 200px;
+    margin: 30px;
+}
+.best-seller-img img{
+    width: 200px;
+}
+.seller-order{
+    width: 200px;
+    background-color: rgb(5, 5, 5);
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.seller-order-title{
+    color: white;
+    font-size: 13px;
+    margin-top: 10px;
+}
+del{
+    margin-right: 10px;
+    color: rgba(255, 255, 255, 0.485);
+    font-size: 13px;
+}
+.mrp{
+    color: rgba(248, 242, 242, 0.967);
+    font-size: 25px;
+}
+.order-item{
+    width: 100px;
+    height: 30px;
+    background-color: rgba(0, 0, 255, 0.414);
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+.order-item:hover{
+    background-color: rgba(0, 0, 255, 0.137);
+    color: rgba(237, 234, 234, 0.494);
+}
+.our-product {
+    margin-top: 10vh;
+}
+.our-order-items{
+    display: grid;
+    grid-template-columns: repeat(7,100px);
+    grid-template-rows: repeat(2,100px);
+    margin-top: 15vh;
+    padding-bottom: 100px;
+}
+.our-product-cloths img{
+    width: 100px;
+}
+
+.time-boxs div{
+    width: 100px;
+    margin: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 18% 16% 10% 10% / 18% 16% 0% 0% ;
+    border: 1px solid black;
+}
+.time-boxs div h2{
+    position: relative;
+    top: 10px;
+}
+.time-boxs div p{
+    position: relative;
+    top:20px;
+    background-color: black;
+    color: rgb(239, 236, 230);
+    width: 100%;
+    text-align: center;
+
+}
+.offer-img img{
+    position: relative;
+    margin-left: 40px;
+}
+@media screen and (max-width:768px){
+    #home{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+    }
+    .home-button{
+        position: relative;
+        left: 40px;
+        margin-bottom: 20px;
+    }
+    .home-img img{
+        width: 300px;
+        position: relative;
+        bottom: -40;
+        left: -20px;
+
+    }
+    .home-content{
+        position: relative;
+        top: -80px;
+    }
+    .collection-imgs{
+        position: relative;
+        left: 30px;
+    }
+    .collection-img img{
+        width: 100px;
+        
+    }
+    .collection-img{
+        width: 150px;
+    }
+    .collection-img-order{
+        width: 100px;
+    }
+
+    .best-fashion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .fashion-title{
+        text-align: center; 
+    }
+    .best-fashion p{
+        text-align: center;
+        width: 50%;
+        margin: auto;
+    }
+    .fashion-sales{
+        position: relative;
+        left: 10px;
+        margin-top: 30px;
+    }
+    #product{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        overflow: scroll;
+    }
+    .deals-of-the-day{
+        display: flex;
+        flex-direction: column;
+    }
+    .deals-of-the-day img{
+        position: relative;
+        z-index: -999;
+        width: 200px;
+    }
+}
